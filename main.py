@@ -75,19 +75,19 @@ async def about(client, message):
                chat_id=message.chat.id,
                text="""<b><u>YOUTUBE BOT INFO</u></b>
 
-<b>• ‍🔧 المطور:</b> <a href="https://t.me/xrzoc">اضغط هنا</a>
+<b>• ‍🔧 المطور:</b> <a href="https://t.me/IIIIIIGII">اضغط هنا</a>
 
 <b>• 📚 المكتبة:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
 
 <b>• 📢 قناة السورس:</b> @TWIX_CH
 
-<b>• 🌀 ملفات السورس:</b> <a href="https://github.com/xrzo/Youtube">اضغط هنا</a>""",
+<b>• 🌀 ملفات السورس:</b> <a href="https://github.com/BAD221/YouTube">اضغط هنا</a>""",
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
                                             "🔙 رجـوع", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "المطـور ⛓️️", url="https://t.me/XRZOC"),
+                                            "المطـور ⛓️️", url="https://t.me/IIIIIIGII"),
                                   ],]
                             ),        
             disable_web_page_preview=True,        
@@ -98,7 +98,7 @@ async def about(client, message):
 # Reply with inline keyboard
 @IIIIIIGII.on_message(filters.private
                    & filters.text
-                   & ~filters.edited
+                   & filters.edited
                    & filters.regex(YTDL_REGEX))
 async def ytdl_with_button(c: Client, message: Message):
     if Config.UPDATES_CHANNEL is not None:
